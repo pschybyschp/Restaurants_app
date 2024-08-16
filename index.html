@@ -1,0 +1,132 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Restaurant Locator - by Algolia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./assets/favicon.ico" type="image/png" />
+    <link rel="stylesheet" href="index.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+
+  <body>
+    <!-- INTERFACE -->
+    <div class="page">
+      <div class="page__container">
+	  
+      <div class="search-bar">
+      	<div class="search-bar__container">
+      		<input type="text" class="search-bar__input" placeholder="Search for Restaurant by Name, Cuisine, Location" autocomplete="off" id="search-box"/>
+      	</div>
+      </div>
+
+<div class="container-fluid text-center">
+  <div class="row">
+    <div class="col border-right">
+      <div class="">
+	    <div class="filter__section ">	  
+			<div >Cuisine/Food Type</div>
+			<div class="filter__container" id="facet1">
+			</div>
+		</div>
+	    <div class="filter__section ">	  
+			<div >Rating</div>
+			<div class="filter__container" id="facet2">
+			</div>
+		</div>
+	    <div class="filter__section ">	  
+			<div >Payment</div>
+			<div class="filter__container" id="facet3">
+			</div>
+		</div>
+	    <div class="filter__section ">	  
+			<div >Discovery</div>
+			<div class="filter__container" id="facet4">
+			</div>
+		</div>
+      </div>
+    </div>
+    <div class="col-8">
+	
+      	<div class="results__stats-bar" id="rest_statbar">
+			<h1 class="results__count-text"></h1>
+			<h1 class="results__time-text"></h1>
+
+      	</div>	
+	
+      <div class="results__item">
+
+      	<div class="result results__item--first" id="resItem1">
+			<div class="result__image-container">
+				<img class="result__image" id="img1" src="" alt="" />
+			</div>
+      		<div class="result__text-container">
+      			<h1 class="result__title" id="tit1"></h1>
+				<div>
+					<div class="result__rating" id="rating1"></div>
+				</div>
+      			<p class="result__summary" id="suma1"></p>
+      		</div>
+      	</div>
+      	<div class="result" id="resItem2">
+			<div class="result__image-container">
+				<img class="result__image" id="img2" src="" alt="" />
+			</div>
+      		<div class="result__text-container">
+      			<h1 class="result__title" id="tit2"></h1>			
+				<div class="result__rating" id="rating2"></div>				
+     			<p class="result__summary" id="suma2"></p>
+      		</div>
+      	</div>
+      	<div class="result" id="resItem3">
+			<div class="result__image-container">
+				<img class="result__image" id="img3" src="" alt="" />
+			</div>
+      		<div class="result__text-container">
+      			<h1 class="result__title" id="tit3"></h1>
+				<div class="result__rating" id="rating3"></div>
+      			<p class="result__summary" id="suma3"></p>
+      		</div>
+      	</div>
+      	<div class="result" id="resItem4">
+			<div class="result__image-container">
+				<img class="result__image" id="img4" src="" alt="" />
+			</div>
+      		<div class="result__text-container">
+      			<h1 class="result__title" id="tit4"></h1>
+				<div class="result__rating" id="rating4"></div>
+      			<p class="result__summary" id="suma4"></p>
+      		</div>
+		</div>
+      	<div class="result results__item--last" id="resItem5">
+			<div class="result__image-container">
+				<img class="result__image" id="img5" src="" alt="" />
+			</div>
+      		<div class="result__text-container">
+      			<h1 class="result__title" id="tit5"></h1>
+				<div class="result__rating" id="rating5"></div>
+      			<p class="result__summary" id="suma5"></p>
+      		</div>
+      	</div>
+      </div>
+		<button id="loadMore" class="results__button">More</button>
+		<button id="back-button" style="display: none;">Back</button>	  
+    </div>
+  </div>
+</div>
+
+	    
+	  </div>
+    </div>
+		<script src="config.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4.11.0/dist/algoliasearch-lite.umd.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/algoliasearch-helper@3.22.3/dist/algoliasearch.helper.min.js"></script>
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+		<script src="index.js"></script>
+
+
+    <!-- /SCRIPTS -->
+  </body>
+</html>
